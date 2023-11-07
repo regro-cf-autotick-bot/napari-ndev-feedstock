@@ -1,5 +1,5 @@
 {% set name = "napari-ndev" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-ndev-{{ version }}.tar.gz
-  sha256: e53e8fc92a3af2d436e03e6652665b57066062f3c344c05ade210c3d743060e0
+  sha256: 5bb821fdc2f1e7c280e73dac5f3df8c0d6b1d7e05233ddf995b18f2459671494
 
 build:
   noarch: python
