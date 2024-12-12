@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python >=3.9
-    - setuptools-scm >= 8
-    - setuptools >= 42
+    - setuptools-scm >=8
+    - setuptools >=42
 
   run:
     - aicsimageio
