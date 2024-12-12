@@ -1,5 +1,6 @@
 {% set name = "napari-ndev" %}
 {% set version = "0.9.7" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools-scm >=8
     - setuptools >=42
 
@@ -30,7 +31,7 @@ requirements:
     - napari-workflows
     - numpy
     - pyclesperanto-prototype
-    - python >=3.9
+    - python >={{ python_min }}
     - qtpy
 
 test:
@@ -42,6 +43,7 @@ test:
   requires:
     - oclgrind
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-ndev
