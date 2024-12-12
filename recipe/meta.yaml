@@ -17,8 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
-    - setuptools-scm
+    - python >=3.9
+    - setuptools-scm >= 8
+    - setuptools >= 42
+
   run:
     - aicsimageio
     - apoc-backend
@@ -28,7 +30,7 @@ requirements:
     - napari-workflows
     - numpy
     - pyclesperanto-prototype
-    - python >=3.8
+    - python >=3.9
     - qtpy
 
 test:
