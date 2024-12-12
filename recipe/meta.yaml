@@ -46,8 +46,8 @@ test:
     - pip list
     - pip check
   requires:
-    - oclgrind # [win]
-    - pocl # [not win]
+    - oclgrind  # win
+    - pocl  # not win
     - pip
     - python {{ python_min }}
 
