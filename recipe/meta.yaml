@@ -23,16 +23,21 @@ requirements:
     - setuptools >=42
 
   run:
-    - aicsimageio
     - apoc-backend
     - dask-core
     - magicgui
     - napari
     - napari-workflows
     - numpy
+    - natsort
     - pyclesperanto-prototype
+    - pyclesperanto
     - python >={{ python_min }}
     - qtpy
+    - napari-pyclesperanto-assistant
+    - napari-segment-blobs-and-things-with-membranes
+    - stackview 
+    - bioio
 
 test:
   imports:
@@ -41,7 +46,8 @@ test:
     - pip list
     - pip check
   requires:
-    - oclgrind
+    - oclgrind # [win]
+    - pocl # [not win]
     - pip
     - python {{ python_min }}
 
